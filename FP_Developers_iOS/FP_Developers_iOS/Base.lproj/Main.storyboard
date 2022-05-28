@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -54,48 +54,28 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-EB-fyL">
-                                                        <rect key="frame" x="60" y="0.0" width="324" height="50"/>
-                                                        <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="QRB-Ug-3Kd">
-                                                                <rect key="frame" x="15" y="15" width="20" height="20"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="QRB-Ug-3Kd" secondAttribute="height" multiplier="1:1" id="FL0-Eo-5CD"/>
-                                                                </constraints>
-                                                            </imageView>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-M1-lYd">
-                                                                <rect key="frame" x="45" y="10" width="264" height="30"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                            </textField>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="QRB-Ug-3Kd" secondAttribute="bottom" constant="15" id="Dx7-WK-IZR"/>
-                                                            <constraint firstItem="8Cv-M1-lYd" firstAttribute="top" secondItem="nS9-EB-fyL" secondAttribute="top" constant="10" id="PHC-bn-Dc2"/>
-                                                            <constraint firstItem="8Cv-M1-lYd" firstAttribute="leading" secondItem="QRB-Ug-3Kd" secondAttribute="trailing" constant="10" id="TmJ-NF-k46"/>
-                                                            <constraint firstItem="QRB-Ug-3Kd" firstAttribute="top" secondItem="nS9-EB-fyL" secondAttribute="top" constant="15" id="blb-0x-thB"/>
-                                                            <constraint firstItem="QRB-Ug-3Kd" firstAttribute="leading" secondItem="nS9-EB-fyL" secondAttribute="leading" constant="15" id="gDd-Gc-zet"/>
-                                                            <constraint firstAttribute="trailing" secondItem="8Cv-M1-lYd" secondAttribute="trailing" constant="15" id="oNO-Vk-D0l"/>
-                                                            <constraint firstAttribute="bottom" secondItem="8Cv-M1-lYd" secondAttribute="bottom" constant="10" id="pi8-UV-uoj"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
+                                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLw-C2-Loh">
+                                                        <rect key="frame" x="58" y="8" width="259" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-Dh-YY2" userLabel="Search Button">
+                                                        <rect key="frame" x="325" y="4" width="51" height="42"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="searchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v70-lT-Xb2"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="nS9-EB-fyL" firstAttribute="leading" secondItem="Q7u-9i-YQ2" secondAttribute="trailing" constant="10" id="484-Bh-jui"/>
                                                     <constraint firstAttribute="bottom" secondItem="Q7u-9i-YQ2" secondAttribute="bottom" id="5Os-Dl-JM7"/>
                                                     <constraint firstItem="Q7u-9i-YQ2" firstAttribute="leading" secondItem="w6e-fy-9iD" secondAttribute="leading" id="Gxt-Qg-c3J"/>
                                                     <constraint firstItem="Q7u-9i-YQ2" firstAttribute="top" secondItem="w6e-fy-9iD" secondAttribute="top" id="kMN-VN-EV5"/>
-                                                    <constraint firstAttribute="bottom" secondItem="nS9-EB-fyL" secondAttribute="bottom" id="llU-7x-U9Y"/>
-                                                    <constraint firstAttribute="trailing" secondItem="nS9-EB-fyL" secondAttribute="trailing" id="qAw-Yk-eZ1"/>
                                                     <constraint firstAttribute="height" constant="50" id="uj8-kU-mlx"/>
-                                                    <constraint firstItem="nS9-EB-fyL" firstAttribute="top" secondItem="w6e-fy-9iD" secondAttribute="top" id="yd9-Fo-7gG"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -286,6 +266,7 @@
                     <connections>
                         <outlet property="collectionView" destination="o0s-5R-IYx" id="24k-Re-WHU"/>
                         <outlet property="mapView" destination="6O0-jG-6uP" id="fvC-3t-DEI"/>
+                        <outlet property="textField_Address" destination="KLw-C2-Loh" id="GIc-i1-ySC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -548,7 +529,7 @@
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoP-oW-nUb">
                                                 <rect key="frame" x="15" y="375" width="384" height="309"/>
-                                                <mutableString key="text">Taj Mahal, also spelled Tadj Mahall, mausoleum complex in Agra, western Uttar Pradesh state, northern India. The Taj Mahal was built by the Mughal emperor Shah Jahān (reigned 1628–58) to immortalize his wife Mumtaz Mahal (“Chosen One of the Palace”), who died in childbirth in 1631, having been the emperor’s inseparable companion since their marriage in 1612. India’s most famous and widely recognized building, it is situated in the eastern part of the city on the southern (right) bank of the Yamuna (Jumna) River. Agra Fort (Red Fort), also on the right bank of the Yamuna, is about 1 mile (1.6 km) west of the Taj Mahal.</mutableString>
+                                                <string key="text">Taj Mahal, also spelled Tadj Mahall, mausoleum complex in Agra, western Uttar Pradesh state, northern India. The Taj Mahal was built by the Mughal emperor Shah Jahān (reigned 1628–58) to immortalize his wife Mumtaz Mahal (“Chosen One of the Palace”), who died in childbirth in 1631, having been the emperor’s inseparable companion since their marriage in 1612. India’s most famous and widely recognized building, it is situated in the eastern part of the city on the southern (right) bank of the Yamuna (Jumna) River. Agra Fort (Red Fort), also on the right bank of the Yamuna, is about 1 mile (1.6 km) west of the Taj Mahal.</string>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -824,8 +805,8 @@
         <image name="ic_distance" width="64" height="64"/>
         <image name="ic_location" width="24" height="24"/>
         <image name="ic_menu" width="50" height="50"/>
-        <image name="ic_search" width="30" height="30"/>
         <image name="ic_star" width="48" height="48"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="place1" width="730" height="487"/>
         <namedColor name="app_color">
             <color red="1" green="0.3411764705882353" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
