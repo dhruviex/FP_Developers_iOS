@@ -1,9 +1,3 @@
-//
-//  DetailViewController.swift
-//  FP_Developers_iOS
-//
-//  Created by parth on 2022-05-27.
-//
 
 import UIKit
 import AVKit
