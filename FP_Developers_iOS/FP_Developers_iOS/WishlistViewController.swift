@@ -11,8 +11,8 @@ class WishlistViewController: UIViewController, UICollectionViewDelegate, UIColl
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let test_places = ["Taj Mahal", "Eiffel Tower", "Canals of Amsterdam"]
-    let test_places_images = ["place1", "place2", "place3"]
+    let test_places = ["Taj Mahal", "Eiffel Tower", "Canals of Amsterdam","Taj Mahal", "Eiffel Tower", "Canals of Amsterdam"]
+    let test_places_images = ["place1", "place2", "place3","place1", "place2", "place3"]
     
     
     override func viewDidLoad() {
