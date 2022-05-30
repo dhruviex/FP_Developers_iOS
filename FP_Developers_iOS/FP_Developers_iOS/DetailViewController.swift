@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -31,6 +32,19 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         return cell
     }
 
+    @IBAction func videoPlayBtn(_ sender: UIButton) {
+        guard let videoPath = Bundle.main.path(forResource: "test_video", ofType:"mp4") else {
+                    debugPrint("video not found")
+                    return
+                }
+        let player = AVPlayer(url: URL(fileURLWithPath: videoPath))
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+    }
+    
     @IBAction func wishlistBtnTap(_ sender: UIButton) {
         //---TEMPORARY REDIRECTION TO ARCHIVE LIST---
         let vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "WishlistViewController") as! WishlistViewController
