@@ -21,6 +21,7 @@
 		CE89BBB0284046D700A58B28 /* PlaceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BBAF284046D700A58B28 /* PlaceViewCell.swift */; };
 		CE89BBB228408F4700A58B28 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BBB128408F4700A58B28 /* DetailViewController.swift */; };
 		CE89BBB628409D8D00A58B28 /* DetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BBB528409D8D00A58B28 /* DetailImageCell.swift */; };
+		CE8AFDD82845069F00F95DAB /* test_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE8AFDD72845069F00F95DAB /* test_video.mp4 */; };
 		CE94B6CF2841B4D00076C9CE /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94B6CE2841B4D00076C9CE /* WishlistViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		CE89BBAF284046D700A58B28 /* PlaceViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewCell.swift; sourceTree = "<group>"; };
 		CE89BBB128408F4700A58B28 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE89BBB528409D8D00A58B28 /* DetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageCell.swift; sourceTree = "<group>"; };
+		CE8AFDD72845069F00F95DAB /* test_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_video.mp4; sourceTree = "<group>"; };
 		CE94B6CE2841B4D00076C9CE /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		CE89BB6C283FF16100A58B28 = {
 			isa = PBXGroup;
 			children = (
+				CE8AFDD72845069F00F95DAB /* test_video.mp4 */,
 				CE89BB77283FF16100A58B28 /* FP_Developers_iOS */,
 				CE89BB91283FF16400A58B28 /* FP_Developers_iOSTests */,
 				CE89BB9B283FF16500A58B28 /* FP_Developers_iOSUITests */,
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8AFDD82845069F00F95DAB /* test_video.mp4 in Resources */,
 				CE89BB88283FF16400A58B28 /* LaunchScreen.storyboard in Resources */,
 				CE89BB85283FF16400A58B28 /* Assets.xcassets in Resources */,
 				CE89BB80283FF16100A58B28 /* Main.storyboard in Resources */,
