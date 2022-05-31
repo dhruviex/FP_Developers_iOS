@@ -150,6 +150,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //managed drawer navigation with indexpath
         if (indexPath.row == 0) {
             let WishlistViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "WishlistViewController") as! WishlistViewController
             self.navigationController?.pushViewController(WishlistViewController, animated: true)
@@ -157,7 +158,8 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
             let CreateSiteController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "CreateSiteController") as! CreateSiteController
             self.navigationController?.pushViewController(CreateSiteController, animated: true)
         } else if (indexPath.row == 2) {
-            //screen in progress
+            let ContactUsController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ContactUsController") as! ContactUsController
+            self.navigationController?.pushViewController(ContactUsController, animated: true)
         } else if (indexPath.row == 3) {
             let AboutViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
             self.navigationController?.pushViewController(AboutViewController, animated: true)
