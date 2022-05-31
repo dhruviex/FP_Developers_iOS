@@ -152,6 +152,13 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
         if (indexPath.row == 0) {
             let WishlistViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "WishlistViewController") as! WishlistViewController
             self.navigationController?.pushViewController(WishlistViewController, animated: true)
+        } else if (indexPath.row == 1) {
+            let CreateSiteController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "CreateSiteController") as! CreateSiteController
+            self.navigationController?.pushViewController(CreateSiteController, animated: true)
+        } else if (indexPath.row == 2) {
+            //screen in progress
+        } else if (indexPath.row == 3) {
+            //screen in progress
         }
     }
     
