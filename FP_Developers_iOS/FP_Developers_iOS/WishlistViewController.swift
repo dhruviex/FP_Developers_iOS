@@ -21,7 +21,6 @@ class WishlistViewController: UIViewController, UICollectionViewDelegate, UIColl
         // Do any additional setup after loading the view.
     }
     
-
     //collection view delegate methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return test_places.count
