@@ -66,28 +66,53 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6N-2Q-m6n" userLabel="Text Field Address">
-                                                        <rect key="frame" x="58" y="8" width="259" height="34"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A90-Qj-bKd">
-                                                        <rect key="frame" x="317" y="4" width="67" height="42"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title="">
-                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
-                                                        <connections>
-                                                            <action selector="searchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zx8-Fk-ATF"/>
-                                                        </connections>
-                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEL-0f-Jo8">
+                                                        <rect key="frame" x="65" y="0.0" width="319" height="50"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6N-2Q-m6n" userLabel="Text Field Address">
+                                                                <rect key="frame" x="10" y="0.0" width="246" height="50"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A90-Qj-bKd">
+                                                                <rect key="frame" x="256" y="4" width="63" height="42"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="A90-Qj-bKd" secondAttribute="height" multiplier="1.5:1" id="WoH-vU-2jP"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title="">
+                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="searchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zx8-Fk-ATF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="e6N-2Q-m6n" firstAttribute="leading" secondItem="qEL-0f-Jo8" secondAttribute="leading" constant="10" id="Cbs-TX-6Fe"/>
+                                                            <constraint firstItem="A90-Qj-bKd" firstAttribute="top" secondItem="qEL-0f-Jo8" secondAttribute="top" constant="4" id="Nrk-jT-9pA"/>
+                                                            <constraint firstItem="e6N-2Q-m6n" firstAttribute="top" secondItem="qEL-0f-Jo8" secondAttribute="top" id="dVE-q5-BDR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="e6N-2Q-m6n" secondAttribute="bottom" id="gXf-WD-pDF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="A90-Qj-bKd" secondAttribute="trailing" id="hDz-it-4Wh"/>
+                                                            <constraint firstAttribute="bottom" secondItem="A90-Qj-bKd" secondAttribute="bottom" constant="4" id="k9H-jy-CZl"/>
+                                                            <constraint firstItem="A90-Qj-bKd" firstAttribute="leading" secondItem="e6N-2Q-m6n" secondAttribute="trailing" id="yWg-Jp-NAG"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="Q7u-9i-YQ2" secondAttribute="bottom" id="5Os-Dl-JM7"/>
                                                     <constraint firstItem="Q7u-9i-YQ2" firstAttribute="leading" secondItem="w6e-fy-9iD" secondAttribute="leading" id="Gxt-Qg-c3J"/>
+                                                    <constraint firstItem="qEL-0f-Jo8" firstAttribute="top" secondItem="w6e-fy-9iD" secondAttribute="top" id="Ie2-Ly-rSh"/>
+                                                    <constraint firstItem="qEL-0f-Jo8" firstAttribute="leading" secondItem="Q7u-9i-YQ2" secondAttribute="trailing" constant="15" id="QrM-y2-xDP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qEL-0f-Jo8" secondAttribute="trailing" id="TNn-7X-kct"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qEL-0f-Jo8" secondAttribute="bottom" id="ZDf-eK-f03"/>
                                                     <constraint firstItem="Q7u-9i-YQ2" firstAttribute="top" secondItem="w6e-fy-9iD" secondAttribute="top" id="kMN-VN-EV5"/>
                                                     <constraint firstAttribute="height" constant="50" id="uj8-kU-mlx"/>
                                                 </constraints>
