@@ -39,7 +39,12 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //
+        sideView.isHidden = true
+        isSideViewOpen = false
+        
+        
+        //
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,7 +84,12 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
             isSideViewOpen = true
             sideView.frame = CGRect(x: 0, y: 96, width: 0, height: 399)
             sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 399)
-            
+            UIView.setAnimationDuration(0.3)
+            UIView.setAnimationDelegate(self)
+            UIView.beginAnimations("TableAnimation", context: nil)
+            sideView.frame = CGRect(x: 1, y: 96, width: 208, height: 399)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 208, height: 399)
+            UIView.commitAnimations()
         
             
             
