@@ -8,9 +8,28 @@
 import UIKit
 import MapKit
 
-class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
    
 
+    
+    var arradata = ["WishList", "Create Site", "Contact us", "About"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arradata.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        cell.lbl.text = arradata[indexPath.row]
+        return cell
+    }
+    
+    
+    @IBOutlet weak var sideView: UIView!
+    
+    @IBOutlet weak var sideBar: UITableView!
+    
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mapView: MKMapView!
     
