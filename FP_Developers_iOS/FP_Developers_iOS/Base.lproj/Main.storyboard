@@ -267,15 +267,31 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6k8-Rn-diu">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6k8-Rn-diu" customClass="TableViewCell" customModule="FP_Developers_iOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.5" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6k8-Rn-diu" id="llD-rs-kgL">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTz-qZ-LDT">
+                                                                    <rect key="frame" x="16" y="11" width="138" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="lbl" destination="zTz-qZ-LDT" id="Yrk-8u-M3A"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="aEx-67-Dvi"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cL7-MX-kj0"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>

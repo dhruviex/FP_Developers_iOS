@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		945A40D82845C89000F2F430 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945A40D72845C89000F2F430 /* TableViewCell.swift */; };
 		CE89BB79283FF16100A58B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BB78283FF16100A58B28 /* AppDelegate.swift */; };
 		CE89BB7B283FF16100A58B28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89BB7A283FF16100A58B28 /* SceneDelegate.swift */; };
 		CE89BB80283FF16100A58B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE89BB7E283FF16100A58B28 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		945A40D72845C89000F2F430 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CE89BB75283FF16100A58B28 /* FP_Developers_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FP_Developers_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE89BB78283FF16100A58B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE89BB7A283FF16100A58B28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				CE89BBB528409D8D00A58B28 /* DetailImageCell.swift */,
 				CE89BBAD283FF21100A58B28 /* Helper.swift */,
 				CE89BB7E283FF16100A58B28 /* Main.storyboard */,
+				945A40D72845C89000F2F430 /* TableViewCell.swift */,
 				CE89BB84283FF16400A58B28 /* Assets.xcassets */,
 				CE89BB86283FF16400A58B28 /* LaunchScreen.storyboard */,
 				CE89BB89283FF16400A58B28 /* Info.plist */,
@@ -289,6 +292,7 @@
 				CE89BBAE283FF21100A58B28 /* Helper.swift in Sources */,
 				CE8AFDDA2845742500F95DAB /* CreateSiteController.swift in Sources */,
 				CE94B6CF2841B4D00076C9CE /* WishlistViewController.swift in Sources */,
+				945A40D82845C89000F2F430 /* TableViewCell.swift in Sources */,
 				CE89BBAC283FF19D00A58B28 /* MainScreenController.swift in Sources */,
 				CE89BB7B283FF16100A58B28 /* SceneDelegate.swift in Sources */,
 				CE89BBB628409D8D00A58B28 /* DetailImageCell.swift in Sources */,
