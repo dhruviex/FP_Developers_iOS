@@ -1,9 +1,3 @@
-//
-//  MainScreenController.swift
-//  FP_Developers_iOS
-//
-//  Created by parth on 2022-05-26.
-//
 
 import UIKit
 import MapKit
@@ -37,16 +31,18 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
         return test_places.count
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaceViewCell", for: indexPath) as! PlaceViewCell
-        cell.place_title.text = test_places[indexPath.row]
-        cell.place_image.image = UIImage(named: test_places_images[indexPath.row])
-        return cell
-    }
+          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaceViewCell", for: indexPath) as! PlaceViewCell
+          cell.place_title.text = test_places[indexPath.row]
+          cell.place_image.image = UIImage(named: test_places_images[indexPath.row])
+          return cell
+      }
+      
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let DetailViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        self.navigationController?.pushViewController(DetailViewController, animated: true)
+        let Controller_DetailedView = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        self.navigationController?.pushViewController(Controller_DetailedView, animated: true)
     }
     
 

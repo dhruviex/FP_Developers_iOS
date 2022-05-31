@@ -1,9 +1,3 @@
-//
-//  DetailViewController.swift
-//  FP_Developers_iOS
-//
-//  Created by parth on 2022-05-27.
-//
 
 import UIKit
 import AVKit
@@ -33,11 +27,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     @IBAction func videoPlayBtn(_ sender: UIButton) {
-        guard let videoPath = Bundle.main.path(forResource: "test_video", ofType:"mp4") else {
-                    debugPrint("video not found")
+        guard let Path_video = Bundle.main.path(forResource: "test_video", ofType:"mp4") else {
+                    debugPrint("No Video Found under Pathname")
                     return
                 }
-        let player = AVPlayer(url: URL(fileURLWithPath: videoPath))
+        let player = AVPlayer(url: URL(fileURLWithPath: Path_video))
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
         self.present(playerViewController, animated: true) {
