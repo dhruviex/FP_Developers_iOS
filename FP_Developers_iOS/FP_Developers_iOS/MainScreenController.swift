@@ -28,7 +28,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var sideBar: UITableView!
     
-    
+    var isSideViewOpen: Bool = false
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mapView: MKMapView!
@@ -74,12 +74,21 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     @IBAction func btnMenu(_ sender: UIButton) {
         sideBar.isHidden = false
         sideView.isHidden = false
+        self.view.bringSubviewToFront(sideView)
+        if !isSideViewOpen {
+            isSideViewOpen = true
+            sideView.frame = CGRect(x: 0, y: 96, width: 0, height: 399)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 399)
+            
         
+            
+            
+            
     }
     
 
     
     
-    
+    }
     
 }
