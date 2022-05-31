@@ -11,15 +11,8 @@ import AVKit
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
-    
+    var index: Int?
     let test_places_images = ["place1_img1", "place1_img2", "place1_img3"]
-    
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
