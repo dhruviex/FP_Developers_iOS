@@ -77,6 +77,8 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     
    
     @IBAction func btnMenu(_ sender: UIButton) {
+        
+        // menu button
         sideBar.isHidden = false
         sideView.isHidden = false
         self.view.bringSubviewToFront(sideView)
@@ -91,10 +93,19 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
             sideBar.frame = CGRect(x: 0, y: 0, width: 208, height: 399)
             UIView.commitAnimations()
         } else {
+            
+            // for menu
             sideBar.isHidden = true
             sideView.isHidden = true
             isSideViewOpen = false
-            
+            sideView.frame = CGRect(x: 1, y: 96, width: 208, height: 399)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 208, height: 399)
+            UIView.setAnimationDuration(0.3)
+            UIView.setAnimationDelegate(self)
+            UIView.beginAnimations("TableAnimation", context: nil)
+            sideView.frame = CGRect(x: 0, y: 89, width: 0, height: 517)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 509)
+            UIView.commitAnimations()
 
     
         }
