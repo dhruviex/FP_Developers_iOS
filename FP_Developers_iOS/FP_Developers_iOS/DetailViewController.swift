@@ -12,7 +12,14 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let test_places_images = ["place1_img1", "place2", "place3"]
+    
+    
+    let test_places_images = ["place1_img1", "place1_img2", "place1_img3"]
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

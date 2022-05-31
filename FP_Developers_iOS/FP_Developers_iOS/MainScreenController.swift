@@ -21,7 +21,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var textField_Address: UITextField!
-    let test_places = ["Egypt", "Banff National Park", "Eiffel Tower","Machu Picchu", "Taj Mahal"]
+    let test_places = ["The Great Pyramids", "Banff National Park", "Eiffel Tower","Machu Picchu", "Taj Mahal"]
     let test_places_images = ["place1_img1", "place2_img1", "place3_img1", "place4_img1", "place5_img1"]
     
     let locationManager = CLLocationManager()
