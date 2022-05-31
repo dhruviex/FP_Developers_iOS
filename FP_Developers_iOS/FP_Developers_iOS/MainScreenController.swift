@@ -12,7 +12,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
    
     //
     
-    var arradata = ["Wish List", "Site", "Contact us", "About"]
+    var arradata = ["WishList", "Site", "Contact us", "About"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arradata.count
