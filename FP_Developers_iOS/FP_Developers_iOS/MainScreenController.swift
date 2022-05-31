@@ -8,8 +8,34 @@
 import UIKit
 import MapKit
 
-class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate,UITableViewDataSource {
    
+    //
+    
+    var arradata = ["Wish List", "Site", "Contact us", "About"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arradata.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        cell.lbl.text = arradata[indexPath.row]
+        return cell
+    }
+    
+    
+    @IBOutlet weak var sideView: UIView!
+    
+    
+    @IBOutlet weak var sideBar: UITableView!
+    
+    var isSideViewOpen: Bool = false
+    
+    
+    
+    
+    
+    //
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mapView: MKMapView!
@@ -17,10 +43,18 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     let test_places = ["Taj Mahal", "Eiffel Tower", "Canals of Amsterdam"]
     let test_places_images = ["place1", "place2", "place3"]
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //
+        
+        sideView.isHidden = true
+        isSideViewOpen = false
+        
 
-        // Do any additional setup after loading the view.
+        //
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,6 +82,19 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
         let DetailViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         self.navigationController?.pushViewController(DetailViewController, animated: true)
     }
+    
+    
+    
+    @IBAction func btnMenu(_ sender: UIButton) {
+        
+    
+        
+        
+        
+        
+    }
+    
+    
     
 
 }
