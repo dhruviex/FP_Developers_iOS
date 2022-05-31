@@ -11,13 +11,23 @@ import AVKit
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var index: Int?
+    @IBOutlet weak var lbl_title: UILabel!
+    @IBOutlet weak var lbl_location: UILabel!
+    @IBOutlet weak var lbl_ratings: UILabel!
+    @IBOutlet weak var lbl_details: UILabel!
+    
+    var place_title: String?
+    var place_location: String?
+    var place_ratings: String?
+    
     let test_places_images = ["place1_img1", "place1_img2", "place1_img3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.lbl_title.text = place_title
+        self.lbl_location.text = place_location
+        self.lbl_ratings.text = place_ratings
     }
     
 

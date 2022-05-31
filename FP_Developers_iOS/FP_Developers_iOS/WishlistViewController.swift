@@ -39,6 +39,9 @@ class WishlistViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let DetailViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        DetailViewController.place_title = test_places[indexPath.row]
+        DetailViewController.place_location = test_location[indexPath.row]
+        DetailViewController.place_ratings = test_ratings[indexPath.row]
         self.navigationController?.pushViewController(DetailViewController, animated: true)
     }
     

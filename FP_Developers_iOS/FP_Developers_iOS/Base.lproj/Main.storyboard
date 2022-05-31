@@ -880,6 +880,10 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionView" destination="q84-44-S3e" id="zlJ-mU-uDm"/>
+                        <outlet property="lbl_details" destination="SoP-oW-nUb" id="eNt-Ge-NN5"/>
+                        <outlet property="lbl_location" destination="U2V-zW-yhc" id="8hu-5H-fk5"/>
+                        <outlet property="lbl_ratings" destination="lpw-13-XBw" id="j97-6K-le4"/>
+                        <outlet property="lbl_title" destination="FUX-m9-KZR" id="6Vg-lP-ehK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPH-Ei-I7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
