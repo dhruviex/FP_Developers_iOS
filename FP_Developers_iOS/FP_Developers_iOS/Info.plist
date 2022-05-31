@@ -40,5 +40,9 @@
 			</dict>
 		</dict>
 	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>Take photos of the Place.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>You can select photos to attach to place.</string>
 </dict>
 </plist>

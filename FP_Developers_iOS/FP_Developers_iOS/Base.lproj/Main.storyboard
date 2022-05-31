@@ -983,21 +983,31 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dv-hV-Sjr">
                                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9K8-ie-gmZ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                            </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-3Z-exj">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                                                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="38"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="firstBtnTap:" destination="127-tO-Ora" eventType="touchUpInside" id="r3U-ij-Xp3"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
+                                                                            <constraint firstItem="9K8-ie-gmZ" firstAttribute="top" secondItem="6dv-hV-Sjr" secondAttribute="top" id="9lX-Cg-45o"/>
                                                                             <constraint firstItem="KD7-3Z-exj" firstAttribute="leading" secondItem="6dv-hV-Sjr" secondAttribute="leading" id="9wc-ih-ReN"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="9K8-ie-gmZ" secondAttribute="bottom" id="Hhx-ff-vkG"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="9K8-ie-gmZ" secondAttribute="trailing" id="Xlf-A0-fKK"/>
                                                                             <constraint firstAttribute="width" secondItem="6dv-hV-Sjr" secondAttribute="height" multiplier="1:1" id="fNB-Pi-7hq"/>
                                                                             <constraint firstAttribute="bottom" secondItem="KD7-3Z-exj" secondAttribute="bottom" id="g30-ov-dk4"/>
+                                                                            <constraint firstItem="9K8-ie-gmZ" firstAttribute="leading" secondItem="6dv-hV-Sjr" secondAttribute="leading" id="gr8-tg-qe9"/>
                                                                             <constraint firstItem="KD7-3Z-exj" firstAttribute="top" secondItem="6dv-hV-Sjr" secondAttribute="top" id="jVM-hu-hhU"/>
                                                                             <constraint firstAttribute="trailing" secondItem="KD7-3Z-exj" secondAttribute="trailing" id="mou-Gd-zZg"/>
                                                                         </constraints>
@@ -1010,23 +1020,33 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0D-dc-1kE">
                                                                         <rect key="frame" x="100" y="0.0" width="80" height="80"/>
                                                                         <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKL-PU-QfC">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                            </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0h-W1-WAw">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                                                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="38"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="secondBtnTap:" destination="127-tO-Ora" eventType="touchUpInside" id="fVI-zV-WQA"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="gKL-PU-QfC" secondAttribute="trailing" id="Cyv-FO-zu4"/>
                                                                             <constraint firstAttribute="bottom" secondItem="a0h-W1-WAw" secondAttribute="bottom" id="IRe-L6-a37"/>
                                                                             <constraint firstItem="a0h-W1-WAw" firstAttribute="top" secondItem="c0D-dc-1kE" secondAttribute="top" id="M0D-mv-AzU"/>
                                                                             <constraint firstItem="a0h-W1-WAw" firstAttribute="leading" secondItem="c0D-dc-1kE" secondAttribute="leading" id="MJJ-Bo-Lmh"/>
                                                                             <constraint firstAttribute="width" secondItem="c0D-dc-1kE" secondAttribute="height" multiplier="1:1" id="Q8I-qx-fyy"/>
                                                                             <constraint firstAttribute="trailing" secondItem="a0h-W1-WAw" secondAttribute="trailing" id="VRj-f2-ocZ"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="gKL-PU-QfC" secondAttribute="bottom" id="neJ-zo-RuE"/>
+                                                                            <constraint firstItem="gKL-PU-QfC" firstAttribute="leading" secondItem="c0D-dc-1kE" secondAttribute="leading" id="qip-Ht-FHO"/>
+                                                                            <constraint firstItem="gKL-PU-QfC" firstAttribute="top" secondItem="c0D-dc-1kE" secondAttribute="top" id="qqW-dr-9Sc"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1037,22 +1057,32 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-Xd-eRQ">
                                                                         <rect key="frame" x="200" y="0.0" width="80" height="80"/>
                                                                         <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-nx-AaM">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                            </imageView>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="195-xm-RVa">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                                                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="38"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="thirdBtnTap:" destination="127-tO-Ora" eventType="touchUpInside" id="Hmx-xC-x2n"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="7aL-Xd-eRQ" secondAttribute="height" multiplier="1:1" id="8Bt-9Y-qQa"/>
+                                                                            <constraint firstItem="ewP-nx-AaM" firstAttribute="leading" secondItem="7aL-Xd-eRQ" secondAttribute="leading" id="I1U-zS-xdV"/>
                                                                             <constraint firstItem="195-xm-RVa" firstAttribute="top" secondItem="7aL-Xd-eRQ" secondAttribute="top" id="Ojf-3s-8oG"/>
                                                                             <constraint firstItem="195-xm-RVa" firstAttribute="leading" secondItem="7aL-Xd-eRQ" secondAttribute="leading" id="VK8-rt-Hs8"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="ewP-nx-AaM" secondAttribute="bottom" id="gVM-lP-3yk"/>
                                                                             <constraint firstAttribute="bottom" secondItem="195-xm-RVa" secondAttribute="bottom" id="oll-yr-OLd"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="ewP-nx-AaM" secondAttribute="trailing" id="p6f-3b-67R"/>
+                                                                            <constraint firstItem="ewP-nx-AaM" firstAttribute="top" secondItem="7aL-Xd-eRQ" secondAttribute="top" id="qCx-aO-3Wk"/>
                                                                             <constraint firstAttribute="trailing" secondItem="195-xm-RVa" secondAttribute="trailing" id="qcC-cE-lSr"/>
                                                                         </constraints>
                                                                         <userDefinedRuntimeAttributes>
@@ -1393,6 +1423,14 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="btn1" destination="KD7-3Z-exj" id="HtJ-gg-8RJ"/>
+                        <outlet property="btn2" destination="a0h-W1-WAw" id="bhX-e1-Yf9"/>
+                        <outlet property="btn3" destination="195-xm-RVa" id="bUb-tu-qLK"/>
+                        <outlet property="img1" destination="9K8-ie-gmZ" id="B1E-hX-byC"/>
+                        <outlet property="img2" destination="gKL-PU-QfC" id="UZA-ff-drg"/>
+                        <outlet property="img3" destination="ewP-nx-AaM" id="17S-eD-9WP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jx-Rf-RTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1400,7 +1438,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_add" width="90" height="90"/>
+        <image name="ic_add" width="72" height="72"/>
         <image name="ic_distance" width="64" height="64"/>
         <image name="ic_location" width="24" height="24"/>
         <image name="ic_menu" width="50" height="50"/>
