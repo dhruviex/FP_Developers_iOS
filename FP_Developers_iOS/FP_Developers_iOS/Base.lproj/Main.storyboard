@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -33,28 +33,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6e-fy-9iD">
                                                 <rect key="frame" x="0.0" y="15" width="384" height="50"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7u-9i-YQ2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu" translatesAutoresizingMaskIntoConstraints="NO" id="7ls-Nl-QJR">
-                                                                <rect key="frame" x="15" y="15" width="20" height="20"/>
-                                                            </imageView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="7ls-Nl-QJR" firstAttribute="leading" secondItem="Q7u-9i-YQ2" secondAttribute="leading" constant="15" id="BVG-wI-kGI"/>
-                                                            <constraint firstAttribute="trailing" secondItem="7ls-Nl-QJR" secondAttribute="trailing" constant="15" id="EO8-Bt-WfM"/>
-                                                            <constraint firstAttribute="width" secondItem="Q7u-9i-YQ2" secondAttribute="height" multiplier="1:1" id="LmD-v9-yup"/>
-                                                            <constraint firstItem="7ls-Nl-QJR" firstAttribute="top" secondItem="Q7u-9i-YQ2" secondAttribute="top" constant="15" id="aGi-gW-T3u"/>
-                                                            <constraint firstAttribute="bottom" secondItem="7ls-Nl-QJR" secondAttribute="bottom" constant="15" id="aQu-bs-s3d"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-EB-fyL">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-EB-fyL">
                                                         <rect key="frame" x="60" y="0.0" width="324" height="50"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="QRB-Ug-3Kd">
@@ -64,7 +43,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-M1-lYd">
-                                                                <rect key="frame" x="45" y="10" width="264" height="30"/>
+                                                                <rect key="frame" x="45" y="10" width="51" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -88,10 +67,6 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="nS9-EB-fyL" firstAttribute="leading" secondItem="Q7u-9i-YQ2" secondAttribute="trailing" constant="10" id="484-Bh-jui"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Q7u-9i-YQ2" secondAttribute="bottom" id="5Os-Dl-JM7"/>
-                                                    <constraint firstItem="Q7u-9i-YQ2" firstAttribute="leading" secondItem="w6e-fy-9iD" secondAttribute="leading" id="Gxt-Qg-c3J"/>
-                                                    <constraint firstItem="Q7u-9i-YQ2" firstAttribute="top" secondItem="w6e-fy-9iD" secondAttribute="top" id="kMN-VN-EV5"/>
                                                     <constraint firstAttribute="bottom" secondItem="nS9-EB-fyL" secondAttribute="bottom" id="llU-7x-U9Y"/>
                                                     <constraint firstAttribute="trailing" secondItem="nS9-EB-fyL" secondAttribute="trailing" id="qAw-Yk-eZ1"/>
                                                     <constraint firstAttribute="height" constant="50" id="uj8-kU-mlx"/>
@@ -886,13 +861,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jx-Rf-RTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2519" y="52"/>
+            <point key="canvasLocation" x="-919" y="52"/>
         </scene>
     </scenes>
     <resources>
         <image name="ic_distance" width="64" height="64"/>
         <image name="ic_location" width="24" height="24"/>
-        <image name="ic_menu" width="50" height="50"/>
         <image name="ic_play" width="90" height="90"/>
         <image name="ic_search" width="30" height="30"/>
         <image name="ic_star" width="48" height="48"/>
