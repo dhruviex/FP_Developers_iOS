@@ -89,7 +89,14 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
         
         sideBar.isHidden = false
         sideView.isHidden = false
-       
+        self.view.bringSubviewToFront(sideView)
+        if !isSideViewOpen{
+            isSideViewOpen = true
+            sideView.frame = CGRect(x: 0, y: 89, width: 0, height: 517)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 509)
+           
+            
+        }
     
         
         
