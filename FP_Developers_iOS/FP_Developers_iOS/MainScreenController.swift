@@ -87,7 +87,11 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBAction func btnMenu(_ sender: UIButton) {
         
+        sideBar.isHidden = false
+        sideView.isHidden = false
+       
     
+        
         
         
         
