@@ -94,10 +94,14 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
             isSideViewOpen = true
             sideView.frame = CGRect(x: 0, y: 89, width: 0, height: 517)
             sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 509)
-           
+            UIView.setAnimationDuration(0.3)
+            UIView.setAnimationDelegate(self)
+            UIView.beginAnimations("TableAnimation", context: nil)
+            sideView.frame = CGRect(x: 1, y: 89, width: 239, height: 517)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 239, height: 509)
+            UIView.commitAnimations()
             
-        }
-    
+        } 
         
         
         
