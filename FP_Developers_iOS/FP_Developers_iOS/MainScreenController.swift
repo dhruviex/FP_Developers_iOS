@@ -8,9 +8,26 @@
 import UIKit
 import MapKit
 
-class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,CLLocationManagerDelegate ,UITextFieldDelegate {
-   
-
+class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource,,CLLocationManagerDelegate ,UITextFieldDelegate {
+  
+    var arradata = ["WishList", "Create Site", "Contact us", "About"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arradata.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        cell.lbl.text = arradata[indexPath.row]
+        return cell
+    }
+    
+    
+    @IBOutlet weak var sideView: UIView!
+    
+    @IBOutlet weak var sideBar: UITableView!
+    
+    var isSideViewOpen: Bool = false
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var mapView: MKMapView!
     
@@ -24,6 +41,10 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //
+        sideView.isHidden = true
+        isSideViewOpen = false
+        
         // Do any additional setup after loading the view.
         mapView.showsUserLocation = false
         mapView.isZoomEnabled = true
@@ -48,6 +69,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
         mapView.addAnnotation(myPin)
         
         textField_Address.delegate = self
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -126,4 +148,31 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
 
+    
+   
+    @IBAction func btnMenu(_ sender: UIButton) {
+        sideBar.isHidden = false
+        sideView.isHidden = false
+        self.view.bringSubviewToFront(sideView)
+        if !isSideViewOpen {
+            isSideViewOpen = true
+            sideView.frame = CGRect(x: 0, y: 96, width: 0, height: 399)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 0, height: 399)
+            UIView.setAnimationDuration(0.3)
+            UIView.setAnimationDelegate(self)
+            UIView.beginAnimations("TableAnimation", context: nil)
+            sideView.frame = CGRect(x: 1, y: 96, width: 208, height: 399)
+            sideBar.frame = CGRect(x: 0, y: 0, width: 208, height: 399)
+            UIView.commitAnimations()
+        } else {
+            sideBar.isHidden = true
+            sideView.isHidden = true
+            isSideViewOpen = false
+            
+
+    
+        }
+            
+    }
+    
 }
