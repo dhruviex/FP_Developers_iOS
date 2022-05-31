@@ -25,6 +25,7 @@
 		CE8AFDD82845069F00F95DAB /* test_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CE8AFDD72845069F00F95DAB /* test_video.mp4 */; };
 		CE8AFDDA2845742500F95DAB /* CreateSiteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AFDD92845742500F95DAB /* CreateSiteController.swift */; };
 		CE8AFDDC2846662100F95DAB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AFDDB2846662100F95DAB /* AboutViewController.swift */; };
+		CE8AFDDE28466B8A00F95DAB /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8AFDDD28466B8A00F95DAB /* ContactUsController.swift */; };
 		CE94B6CF2841B4D00076C9CE /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94B6CE2841B4D00076C9CE /* WishlistViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		CE8AFDD72845069F00F95DAB /* test_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_video.mp4; sourceTree = "<group>"; };
 		CE8AFDD92845742500F95DAB /* CreateSiteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSiteController.swift; sourceTree = "<group>"; };
 		CE8AFDDB2846662100F95DAB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CE8AFDDD28466B8A00F95DAB /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
 		CE94B6CE2841B4D00076C9CE /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				CE94B6CE2841B4D00076C9CE /* WishlistViewController.swift */,
 				CE8AFDD92845742500F95DAB /* CreateSiteController.swift */,
 				CE8AFDDB2846662100F95DAB /* AboutViewController.swift */,
+				CE8AFDDD28466B8A00F95DAB /* ContactUsController.swift */,
 				CE89BBAF284046D700A58B28 /* PlaceViewCell.swift */,
 				CE89BBB528409D8D00A58B28 /* DetailImageCell.swift */,
 				CE89BBAD283FF21100A58B28 /* Helper.swift */,
@@ -297,6 +300,7 @@
 				CE94B6CF2841B4D00076C9CE /* WishlistViewController.swift in Sources */,
 				CE8AFDDC2846662100F95DAB /* AboutViewController.swift in Sources */,
 				945A40D82845C89000F2F430 /* TableViewCell.swift in Sources */,
+				CE8AFDDE28466B8A00F95DAB /* ContactUsController.swift in Sources */,
 				CE89BBAC283FF19D00A58B28 /* MainScreenController.swift in Sources */,
 				CE89BB7B283FF16100A58B28 /* SceneDelegate.swift in Sources */,
 				CE89BBB628409D8D00A58B28 /* DetailImageCell.swift in Sources */,
