@@ -101,7 +101,13 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
             sideBar.frame = CGRect(x: 0, y: 0, width: 239, height: 509)
             UIView.commitAnimations()
             
-        } 
+        } else {
+            sideBar.isHidden = true
+            sideView.isHidden = true
+            
+            
+        }
+    
         
         
         
