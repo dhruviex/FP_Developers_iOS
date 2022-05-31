@@ -1,10 +1,3 @@
-//
-//  AboutViewController.swift
-//  FP_Developers_iOS
-//
-//  Created by parth on 2022-05-31.
-//
-
 import UIKit
 
 class AboutViewController: UIViewController {

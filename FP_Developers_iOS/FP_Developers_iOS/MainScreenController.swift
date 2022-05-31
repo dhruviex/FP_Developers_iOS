@@ -145,6 +145,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         cell.lbl.text = arradata[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -158,7 +159,8 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
         } else if (indexPath.row == 2) {
             //screen in progress
         } else if (indexPath.row == 3) {
-            //screen in progress
+            let AboutViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+            self.navigationController?.pushViewController(AboutViewController, animated: true)
         }
     }
     
