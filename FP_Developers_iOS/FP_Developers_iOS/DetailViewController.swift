@@ -20,7 +20,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     var place_location: String?
     var place_ratings: String?
     
-    let test_places_images = ["place1_img1", "place1_img2", "place1_img3"]
+    let test_places_images = ["place1_img1", "place2_img1", "place3_img1", "place4_img1", "place5_img1", "place6_img1", "place7_img1", "place8_img1", "place9_img1", "place10_img1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
     @IBAction func videoPlayBtn(_ sender: UIButton) {
-        guard let videoPath = Bundle.main.path(forResource: "test_video", ofType:"mp4") else {
+        guard let videoPath = Bundle.main.path(forResource: "place_video", ofType:"mp4") else {
                     debugPrint("video not found")
                     return
                 }
