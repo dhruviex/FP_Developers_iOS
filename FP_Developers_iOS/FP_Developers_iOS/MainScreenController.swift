@@ -12,18 +12,7 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
   
     var arradata = ["WishList", "Create Site", "Contact us", "About"]
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arradata.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-        cell.lbl.text = arradata[indexPath.row]
-        return cell
-    }
-    
-    
     @IBOutlet weak var sideView: UIView!
-    
     @IBOutlet weak var sideBar: UITableView!
     
     var isSideViewOpen: Bool = false
@@ -148,6 +137,23 @@ class MainScreenController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
 
+    //menu list items
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arradata.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        cell.lbl.text = arradata[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath.row == 0) {
+            let WishlistViewController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "WishlistViewController") as! WishlistViewController
+            self.navigationController?.pushViewController(WishlistViewController, animated: true)
+        }
+    }
     
    
     @IBAction func btnMenu(_ sender: UIButton) {

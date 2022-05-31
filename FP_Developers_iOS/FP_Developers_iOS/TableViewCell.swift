@@ -12,6 +12,7 @@ class TableViewCell: UITableViewCell {
     
     
     
+    @IBOutlet weak var cell_btn: UIButton!
     @IBOutlet weak var lbl: UILabel!
     
     
