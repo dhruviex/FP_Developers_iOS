@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource,,CLLocationManagerDelegate ,UITextFieldDelegate {
+class MainScreenController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource,CLLocationManagerDelegate ,UITextFieldDelegate {
   
     var arradata = ["WishList", "Create Site", "Contact us", "About"]
     
